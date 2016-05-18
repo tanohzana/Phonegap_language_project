@@ -1,10 +1,4 @@
-.navbar{
-	padding-top:20px;
-}
-
-nav{
-	margin-top:0;
-}
+@import "style_navbar.css";
 
 #logo{
 	margin-top:20px;
