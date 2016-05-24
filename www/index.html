@@ -13,11 +13,11 @@
         <link rel="stylesheet" href="anicollection/anicollection.css" />
 
         <!-- Bootstrap -->
-        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
 
     </head>
     <body data-gr-c-s-loaded="true">
-        <nav class="navbar navbar-default">
+        <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header"> 
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -26,34 +26,37 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href="index.html" class="navbar-brand">langProject</a>
+                    <a href="index.html" class="navbar-brand">Langua</a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav">
-                    <li><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Home<span class="sr-only">(current)</span></a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                   </ul>
                 </div><!-- /.navbar-collapse -->
             </div>
         </nav>
         <div id="pageIndex" class="text-center">
-            <img id="logo" data-anijs="if:click, on:body, do: bounce animated, to:#logo" src="imgs/hw.png"/>
-            <form id="formLogin" action="" method="">
-                <input class="input-lg form-group form-control form-control-lg" type="text" placeholder="Identifiant (ex.: JohnDoe28)">
-                <input class="input-lg password form-group form-control form-control-lg" type="password" placeholder="Mot de passe">
+            <img id="logo" data-anijs="if:click, on:body, do: bounce animated, to:#logo" src="imgs/logoLangua.png"/>
+            <form id="formLogin">
+                <input class="input-lg form-group form-control form-control-lg" type="text" placeholder="Identifiant (ex.: JohnDoe28)" name="identifiant">
+                <input class="input-lg password form-group form-control form-control-lg" type="password" placeholder="Mot de passe" name="pass">
                 <button class="btn btn-primary btn-group btn-block">Se connecter</button>
-                <button class="btn btn-default btn-group btn-block">Je m'inscris</button>
+                <a class="btn btn-default btn-group btn-block" href="inscription.html">Je m'inscris</a>
             </form>
         </div>
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
 
         <script src="anicollection/anijs.js"></script>
         <script src="anicollection/anijs-helper-dom.js"></script> 
+        
+        <script src="js/receiveData.js"></script>
+        <script src="js/sendData.js"></script>
     </body>
 </html>

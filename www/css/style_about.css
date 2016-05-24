@@ -1,6 +1,11 @@
 @import "style_navbar.css";
 
+body{
+	background-color: #5cb85c !important;
+}
+
 .container-jumbo{
+	margin-top:80px;
 	text-align:center;
 	margin-left:2%;
 	margin-right:2%;

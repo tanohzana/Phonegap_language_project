@@ -1,0 +1,23 @@
+@import "style_navbar.css";
+
+body{
+	background-color: #5cb85c !important;
+}
+
+img{
+	width:30%;
+}
+
+.personne{
+	text-align:center;
+}
+
+.bande{
+	padding-top:10px;
+	padding-bottom:2px;
+	background-color: #5cb85c;
+}
+
+.container{
+	padding-top:70px;
+}
