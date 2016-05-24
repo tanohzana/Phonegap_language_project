@@ -5,9 +5,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Connexion</title>
+        <title>Accueil</title>
 
-        <link href="css/style_connexion.css" rel="stylesheet">
+        <link href="css/style_accueil.css" rel="stylesheet">
+
+        <link href="css/font-awesome.min.css" rel="stylesheet">
 
 
         <link rel="stylesheet" href="css/anicollection.css" />
@@ -31,21 +33,36 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav">
-                    <li><a href="#">Home<span class="sr-only">(current)</span></a></li>
+                    <li><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                   </ul>
                 </div><!-- /.navbar-collapse -->
             </div>
         </nav>
+        
         <div id="pageIndex" class="text-center">
-            <img id="logo" data-anijs="if:click, on:body, do: bounce animated, to:#logo" src="imgs/logoLangua.png"/>
-            <form id="formLogin">
-                <input class="input-lg form-group form-control form-control-lg" type="text" placeholder="Identifiant (ex.: JohnDoe28)" name="pseudo">
-                <input class="input-lg password form-group form-control form-control-lg" type="password" placeholder="Mot de passe" name="pass">
-                <button class="btn btn-primary btn-group btn-block">Se connecter</button>
-                <a class="btn btn-default btn-group btn-block" href="inscription.html">Je m'inscris</a>
-            </form>
+            <div id="tiles_container">
+                <a href="#" id="tile1" class="fa-links thumbnail tile tile-wide">
+                    <h2>Exercices</h2>
+                    <i class="fa fa-pencil fa-3x" aria-hidden="true"></i>
+                </a>
+
+                <a href="#" id="tile2" class="fa-links thumbnail tile tile-wide">
+                    <h2>News</h2>
+                    <i class="fa fa-newspaper-o fa-3x" aria-hidden="true"></i>
+                </a>
+
+                <a href="#" id="tile3" class="fa-links thumbnail tile tile-wide">
+                    <h2>People</h2>
+                    <i class="fa fa-star fa-3x" aria-hidden="true"></i>
+                </a>
+
+                <a href="#" id="tile4" class="fa-links thumbnail tile tile-wide">
+                    <h2>Lorem</h2>
+                    <i class="fa fa-question fa-3x" aria-hidden="true"></i>
+                </a>
+            </div>
         </div>
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

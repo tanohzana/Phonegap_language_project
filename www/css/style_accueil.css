@@ -1,21 +1,15 @@
 @import "style_navbar.css";
 
-body{
-	background-color: #5cb85c !important;
-}
-
 #pageIndex{
 	min-height: 100vh;
 }
 
-#logo{
+#tiles_container{
 	padding-top:70px;
-	margin-top:20px;
-	margin-bottom:30px;
-	width:50%;
 }
 
-#formLogin{
-	margin-left:10px;
-	margin-right:10px;
+#tile1,#tile2,#tile3,#tile4{
+	padding-top: 10px;
+	padding-bottom: 30px;
+	margin-bottom: 0px !important;
 }
