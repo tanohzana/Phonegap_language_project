@@ -12,3 +12,15 @@
 nav{
 	margin-top:0;
 }
+
+#home-link{
+	color:grey;
+	padding-top:15px;
+	padding-left:15px;
+	padding-right:15px;
+}
+
+#home-link:hover{
+	cursor:pointer;
+	color:black;
+}

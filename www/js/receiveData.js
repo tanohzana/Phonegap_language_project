@@ -24,3 +24,12 @@
 //     out += "</table>";
 //     document.getElementById("id01").innerHTML = out;
 // }
+
+$("#home-link").click(function(){
+	if(!window.localStorage.getItem("pseudo")){
+		window.location.href = "index.html";
+	}
+	else{
+		window.location.href = "accueil.html";
+	}
+});

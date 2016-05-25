@@ -21,7 +21,11 @@ $('#formLogin').submit(function(){
         url: 'http://192.168.1.15/checkUser.php',
         complete: function(data){
             //console.log(data);
-            alert(data.responseText); //REDIRECTION
+            if(data.responseText){
+                window.localStorage.setItem("pseudo", data.responseText);
+                window.location.href = "accueil.html";
+            }
+            //else
         }
     });
     return false;

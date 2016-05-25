@@ -5,11 +5,54 @@
 }
 
 #tiles_container{
-	padding-top:70px;
+	padding-top:71px;
 }
 
 #tile1,#tile2,#tile3,#tile4{
 	padding-top: 10px;
 	padding-bottom: 30px;
 	margin-bottom: 0px !important;
+}
+
+#img-tile1,#img-tile2,#img-tile3,#img-tile4{
+	position: absolute;
+}
+
+.thumbnail {
+  position: relative;
+  overflow: hidden;
+}
+
+.thumbnail img {
+  left: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+
+.thumbnail #img-tile1 {
+	top: 60%;
+}
+
+.thumbnail #img-tile2 {
+	top: 10%;
+}
+
+.thumbnail #img-tile3 {
+	top: 50%;
+}
+
+.thumbnail #img-tile4 {
+	top: 20%;
+}
+
+.thumbnail img.portrait {
+  width: 100%;
+  height: auto;
+}
+
+.txt-tiles{
+	position:relative;
 }
