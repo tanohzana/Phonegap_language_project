@@ -13,14 +13,14 @@ nav{
 	margin-top:0;
 }
 
-#home-link{
+#home-link,#brandLangua,#deconnexion{
 	color:grey;
 	padding-top:15px;
 	padding-left:15px;
 	padding-right:15px;
 }
 
-#home-link:hover{
+#home-link:hover,#brandLangua:hover,#deconnexion:hover{
 	cursor:pointer;
 	color:black;
 }
