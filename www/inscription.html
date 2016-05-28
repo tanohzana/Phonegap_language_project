@@ -41,12 +41,15 @@
         <div id="pageIndex" class="text-center">
             <img id="logo" data-anijs="if:click, on:body, do: bounce animated, to:#logo" src="imgs/logoLangua.png"/>
             <form id="formInscription">
-                <input class="input-lg form-group form-control form-control-lg" type="text" placeholder="Prénom" name="prenom">
-                <input class="input-lg form-group form-control form-control-lg" type="text" placeholder="Nom" name="nom">
-                <input class="input-lg form-group form-control form-control-lg" type="text" placeholder="E-mail" name="email">
-                <input class="input-lg form-group form-control form-control-lg" type="text" placeholder="Date de naissance" name="bday">
-                <input class="input-lg form-group form-control form-control-lg" type="text" placeholder="Pseudo (ex.: JohnDoe28)" name="pseudo">
-                <input class="input-lg password form-group form-control form-control-lg" type="password" placeholder="Mot de passe" name="pass">
+                <input id="prenom" class="input-lg form-group form-control form-control-lg" type="text" placeholder="Prénom" name="prenom">
+                <input id="nom" class="input-lg form-group form-control form-control-lg" type="text" placeholder="Nom" name="nom">
+                <input id="email" class="input-lg form-group form-control form-control-lg" type="text" placeholder="E-mail" name="email">
+                <p id="emailFormat">Format email: johndoe@langua.fr ou johndoe045@host.com</p> 
+                <input id="bday" class="input-lg form-group form-control form-control-lg" type="text" placeholder="Date de naissance (Ex.: 1996-07-28)" name="bday">
+                <p id="bdayNotCorrect">Utiliser ce format: AAAA-MM-JJ</p> 
+                <input id="pseudo" class="input-lg form-group form-control form-control-lg" type="text" placeholder="Pseudo (ex.: JohnDoe28)" name="pseudo">
+                <p id="pseudoDejaEx">Pseudo déja existant !</p> 
+                <input id="pass" class="input-lg password form-group form-control form-control-lg" type="password" placeholder="Mot de passe" name="pass">
                 <button class="btn btn-primary btn-group btn-block">Inscription</button>
                 <a class="btn btn-default btn-group btn-block" href="index.html">Se connecter</a>
             </form>

@@ -5,8 +5,5 @@ A FAIRE:
 - Page funny facts
 - Page people
 - Page news
-- Blinder ensemble des champs
-- Blinder date de naissance
-- Virer le delire sur Python en console
 - Changer mdp Raspi
 - Creer utilisater pour acces, autre que root

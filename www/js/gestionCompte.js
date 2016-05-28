@@ -1,16 +1,48 @@
 
 $('#formInscription').submit(function(){
     var postData = $(this).serialize();
-    $.ajax({
-        type: 'POST',
-        data: postData,
-        url: 'http://192.168.1.15/newUser.php', //-------Blinder ensemble des champs à remplir pour connexion
-        complete: function(data){
-            //console.log(data);
-            window.sessionStorage.setItem("pseudo", data.responseText);
-            window.location.href="accueil.html";
+    var proceed=true;
+    var ids1 = ["prenom","nom","email","bday","pseudo","pass"];
+    var ids2 = ["pseudoDejaEx","bdayNotCorrect","emailFormat"];
+
+    for(var i=0; i<ids2.length; i++)
+        document.getElementById(ids2[i]).style.display="none";
+
+    for(var i=0; i<ids1.length; i++)
+        document.getElementById(ids1[i]).style.borderColor="#ccc";
+
+    for(var i=0; i<ids1.length; i++)
+        if(!document.getElementById(ids1[i]).value){
+            document.getElementById(ids1[i]).style.borderColor="red";
+            proceed=false;
         }
-    });
+
+    if(proceed){
+        $.ajax({
+            type: 'POST',
+            data: postData,
+            url: 'http://192.168.1.15/newUser.php',
+            complete: function(data){
+                //console.log(data);
+                if(data.responseText==document.getElementById("pseudo").value){
+                    window.sessionStorage.setItem("pseudo", data.responseText);
+                    window.location.href="accueil.html";
+                }
+                else if(data.responseText=="pseudo"){
+                    document.getElementById("pseudo").style.borderColor="red";
+                    document.getElementById("pseudoDejaEx").style.display="block";
+                }
+                else if(data.responseText=="bday"){
+                    document.getElementById("bday").style.borderColor="red";
+                    document.getElementById("bdayNotCorrect").style.display="block";
+                }
+                else if(data.responseText=="email"){
+                    document.getElementById("email").style.borderColor="red";
+                    document.getElementById("emailFormat").style.display="block";
+                }
+            }
+        });
+    }
     return false;
 });
 
@@ -26,7 +58,10 @@ $('#formLogin').submit(function(){
                 window.sessionStorage.setItem("pseudo", data.responseText);
                 window.location.href = "accueil.html";
             }
-            //else
+            else{
+                document.getElementById("pseudo").style.borderColor="red";
+                document.getElementById("pass").style.borderColor="red";
+            }
         }
     });
     return false;
